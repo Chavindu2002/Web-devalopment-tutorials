@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Tutorial 4</title> 
+    </head>
+
+    <style>
+
+       label {
+        width:150px;
+        display: inline-block;
+       }
+
+       .footer {
+        padding: 8px;
+        margin:0%;
+        border: 0px;
+        background-color: rgb(219, 152, 27);
+        
+       }
+
+       .bd {
+        width:60%;
+        margin-left: 100px;
+        background-color: bisque;
+        border: solid 3px rgb(154, 104, 11);
+       }
+
+
+    </style>
+
+    <body>
+        <h1>Bank Account Details</h1>
+        <form>
+            <fieldset class="bd">
+                <legend>User Details</legend><br>
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" placeholder="Enter your first name"><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" placeholder="Enter your Last name"><br><br>
+                <label for="email">Email address:</label>
+                <input type="email" name="email" placeholder="Enter your email address"><br><br>
+                <label for="password">Password: </label>
+                <input type="password" name="password" placeholder="****************" size="10" maxsize="10"><br><br>
+                <label for="DOB">Date of Birth:</label>
+                <input type="date" name="DOB"><br><br>
+
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="pvt">Private</option>
+                </select><br><br>
+                
+                <label for="address">Current Address:</label><br><br>
+                <input type="text" name="address number" placeholder="Address number"><br>
+                <input type="text" name="address line 1" placeholder="Address Line 1"><br>
+                <input type="text" name="address line 2" placeholder="Address Line 2"><br><br>
+                <input type="text" name="city" placeholder="City"><br><br><br><br><hr>
+                <legend>Account Details</legend><br><br>
+                <label for="accName">Account Name: </label>
+                <input type="text" name="accName" placeholder="Enter your account name"><br><br>
+                <label for="accNum">Account Number:</label>
+                <input type="number" name="accNum" placeholder="Enter your account number"><br><br>
+                <label for="bankname">Bank Name:</label>
+                <input type="text" name="bankname"><br><br><br>
+
+                <label for="text">Account Type:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="radio" id="">
+                <label for="Acctype1">Savings</label> 
+                <input type="radio" name="radio" id="" checked >
+                <label for="Acctype2">Checking</label>
+                <input type="radio" name="radio" id="" >
+                <label for="Acctype3">Other</label>
+               <br><br><br>
+                <label for="comment">Any comments: </label>&nbsp;
+                <textarea name="textarea" id="" cols="20" rows="7"></textarea><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <fieldset class="footer">
+                    <input type="submit" value="Submit">&nbsp;&nbsp;
+                    <input type="reset" value="Reset"><br>
+                </fieldset>
+                
+
+
+            </fieldset>
+        </form>
+    </body>
+</html>
